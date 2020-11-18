@@ -1,6 +1,7 @@
 import os
 import getpass
 import menu_aws as aws
+import docker as dr
 
 
 
@@ -18,7 +19,7 @@ while True:
 
 		while True:
 			os.system("tput setaf 3")
-			print("\t\t\t--------------------------\n\t\t\t   Welcome to TUI Automated menu \n\t\t\t--------------------------")
+			print("\t\t\t--------------------------\n\t\t\t   Welcome to RHEL8 O.S. TUI Automated menu \n\t\t\t--------------------------")
 
 
 			os.system("tput setaf 6")
@@ -43,8 +44,7 @@ while True:
 				#--to be added
 				print("hadoop to be added")
 			elif int(main)==4:
-				#--to be added
-				print("docker to be added")
+				dr.local()
 			elif int(main)==0:
 				exit()
 			else:
